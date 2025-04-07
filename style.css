@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Baloo 2", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./picture/background2.jpg");
+  background-size: cover; /* 讓圖片填滿畫面 */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* 確保背景圖片覆蓋整個畫面 */
+  overflow: hidden; /* 防止滾動條 */
+}
+
+#myCanvas {
+  border: 5px solid greenyellow;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#myScore {
+  margin-top: 12rem;
+  margin: 0;
+  margin-bottom: 0.5px;
+}
+#myScore2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem; /* 調整為較小的值，例如 1rem */
+}
+
+#myScore,
+#myScore2 {
+  -webkit-text-stroke: 2px black;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+/* newgame */
+#Start {
+  font-family: "Baloo 2", cursive;
+  padding: 0.2rem 0.5rem;
+  background-color: yellow;
+  font-size: 2rem;
+  display: block;
+  margin-top: 4rem;
+}
